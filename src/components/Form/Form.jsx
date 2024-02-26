@@ -1,7 +1,16 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { addTask } from '../../redux/tasks/tasksSlice';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 
-const TaskForm = ({ onAddTask }) => {
+const TaskForm = () => {
+  const dispatch = useDispatch();
+
+  const handleSubmit = (values, { resetForm }) => {
+    dispatch(addTask({ name: values.taskName, description: values.description }));
+    resetForm();
+  };
+
   return (
     <Formik
       initialValues={{ taskName: '', description: '' }}
@@ -16,8 +25,7 @@ const TaskForm = ({ onAddTask }) => {
         return errors;
       }}
       onSubmit={(values, { resetForm }) => {
-        onAddTask(values);
-        resetForm();
+        handleSubmit(values, { resetForm }); 
       }}
     >
       {({ isSubmitting }) => (
@@ -32,7 +40,7 @@ const TaskForm = ({ onAddTask }) => {
             <Field as="textarea" id="description" name="description" />
             <ErrorMessage name="description" component="div" className="error" />
           </div>
-          <button type="submit" disabled={isSubmitting}>
+          <button type="submit">
             Add Task
           </button>
         </Form>
