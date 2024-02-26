@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/322.015cd340.chunk.js","mappings":"6IAMA,UAN2B,WAI3B,C","sources":["pages/CompletedTasksPage/CompletedTasksPage.jsx"],"sourcesContent":["const CompletedTasksPage = () => {\n    return\n        \n    \n}\n\nexport default CompletedTasksPage"],"names":[],"sourceRoot":""}
