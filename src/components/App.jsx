@@ -1,10 +1,12 @@
-import { Suspense, lazy, useEffect } from "react";
+import { Suspense, lazy } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { ROUTE_PATHES } from "constants/constants";
-import FormPage from "pages/FormPage/FormPage";
 import SharedLayout from "./SharedLayout/SharedLayout";
-import CompletedTasksPage from "pages/CompletedTasksPage/CompletedTasksPage";
-import NotCompletedTasksPage from "pages/NotCompletedTasksPage/NotCompletedTasksPage";
+
+const FormPage = lazy(() => import("pages/FormPage/FormPage"));
+const NotCompletedTasksPage = lazy(() => import("pages/CompletedTasksPage/CompletedTasksPage"));
+const CompletedTasksPage = lazy(() => import("pages/NotCompletedTasksPage/NotCompletedTasksPage"));
+
 
 export const App = () => {
   return (
