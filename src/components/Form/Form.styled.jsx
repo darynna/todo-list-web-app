@@ -16,8 +16,10 @@ export const FormGroup = styled.div`
   margin-bottom: 20px;
 
   .field{
+    width: 380px;
     padding: 8px;
-    width: 380px
+    font-size: 16px;
+    border: 1px solid #0056b3
   }
 `;
 
@@ -35,7 +37,7 @@ export const InputStyled = styled(Field)`
 `;
 
 export const ErrorMsg = styled(ErrorMessage)`
-  color: red;
+  color: #e63900;
 `;
 
 export const SubmitButton = styled.button`
