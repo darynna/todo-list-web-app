@@ -16,7 +16,8 @@ export const ListStyled= styled.ul`
 export const NavLinkStyled = styled(NavLink)`
 color: #1e90ff;
   text-decoration: none;
-  transition: color 0.3s; 
+  transition: color 0.3s;
+  font-size: 18px; 
   font-weight: bold;
 
   &:hover {

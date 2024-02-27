@@ -1,9 +1,10 @@
 import TaskItem from "components/TaskItem/TaskItem";
+import { TaskList } from "./TasksList.styled";
 
 const TasksList = ({array}) => {
 
   return (
-    <ul>
+    <TaskList>
       {array.length !== 0 &&
         array.map((date) => {
 
@@ -12,7 +13,7 @@ const TasksList = ({array}) => {
             />
           );
         })}
-    </ul>
+    </TaskList>
   );
 };
 
