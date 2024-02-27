@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/todo-list-web-app/static/css/main.7acaea2f.css",
-    "main.js": "/todo-list-web-app/static/js/main.70379472.js",
-    "static/js/747.805497fc.chunk.js": "/todo-list-web-app/static/js/747.805497fc.chunk.js",
+    "main.js": "/todo-list-web-app/static/js/main.ec851040.js",
+    "static/js/747.8f481622.chunk.js": "/todo-list-web-app/static/js/747.8f481622.chunk.js",
     "static/js/322.015cd340.chunk.js": "/todo-list-web-app/static/js/322.015cd340.chunk.js",
     "static/js/818.1bc1484f.chunk.js": "/todo-list-web-app/static/js/818.1bc1484f.chunk.js",
     "static/js/705.4253d65a.chunk.js": "/todo-list-web-app/static/js/705.4253d65a.chunk.js",
     "index.html": "/todo-list-web-app/index.html",
     "main.7acaea2f.css.map": "/todo-list-web-app/static/css/main.7acaea2f.css.map",
-    "main.70379472.js.map": "/todo-list-web-app/static/js/main.70379472.js.map",
-    "747.805497fc.chunk.js.map": "/todo-list-web-app/static/js/747.805497fc.chunk.js.map",
+    "main.ec851040.js.map": "/todo-list-web-app/static/js/main.ec851040.js.map",
+    "747.8f481622.chunk.js.map": "/todo-list-web-app/static/js/747.8f481622.chunk.js.map",
     "322.015cd340.chunk.js.map": "/todo-list-web-app/static/js/322.015cd340.chunk.js.map",
     "818.1bc1484f.chunk.js.map": "/todo-list-web-app/static/js/818.1bc1484f.chunk.js.map",
     "705.4253d65a.chunk.js.map": "/todo-list-web-app/static/js/705.4253d65a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.70379472.js"
+    "static/js/main.ec851040.js"
   ]
 }
