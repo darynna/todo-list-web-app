@@ -1,6 +1,14 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { completeTask } from "../../redux/tasks/tasksSlice";
 
 const TaskItem = ({ date }) => {
+  const dispatch = useDispatch();
+
+const handleToggleCompletion = () => {
+  dispatch(completeTask(date.id)); 
+};
+
   return (
     <li key={date.id}>
       <div>
@@ -8,7 +16,9 @@ const TaskItem = ({ date }) => {
       </div>
       <div className="task-details">
         <p>{date.description}</p>
-        <button>Complete!</button>
+        <button onClick={handleToggleCompletion}>
+          {date.completed ? 'Mark Incomplete' : 'Complete'}
+        </button>
       </div>
     </li>
   );

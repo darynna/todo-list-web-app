@@ -15,10 +15,11 @@ const tasksSlice = createSlice({
       state.tasks = state.tasks.filter(task => task.id !== action.payload);
     },
     completeTask: (state, action) => {
-        const taskIndex = state.tasks.findIndex(task => task.id === action.payload);
-        if (taskIndex !== -1) {
-          state.tasks[taskIndex].completed = true;
-        }
+      const taskIndex = state.tasks.findIndex(task => task.id === action.payload);
+      if (taskIndex !== -1) {
+        // Toggle the completion status of the task
+        state.tasks[taskIndex].completed = !state.tasks[taskIndex].completed;
+      }
     },
   },
 });
