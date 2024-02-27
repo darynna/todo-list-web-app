@@ -2,6 +2,7 @@ import { Suspense, lazy } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { ROUTE_PATHES } from "constants/constants";
 import SharedLayout from "./SharedLayout/SharedLayout";
+import Loader from "./Loader/Loader";
 
 const FormPage = lazy(() => import("pages/FormPage/FormPage"));
 const NotCompletedTasksPage = lazy(() => import("pages/NotCompletedTasksPage/NotCompletedTasksPage"));
@@ -10,7 +11,7 @@ const CompletedTasksPage = lazy(() => import("pages/CompletedTasksPage/Completed
 
 export const App = () => {
   return (
-    <Suspense fallback={<p>Loading...</p>}>
+    <Suspense fallback={<Loader/>}>
       <Routes>
         <Route path={ROUTE_PATHES.form} element={<SharedLayout />}>
           <Route index element={<FormPage />} />
