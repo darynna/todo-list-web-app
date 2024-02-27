@@ -1,28 +1,29 @@
-import { NavLink } from "react-router-dom";
+import { HeaderStyled, ListStyled, NavLinkStyled  } from "./Header.styled";
+// import logo from "../../logo/logo.png"
 
 const Header = () => {
     return (
-      <header>
+      <HeaderStyled>
         <nav>
-          <ul>
+          <ListStyled>
             <li>
-              <NavLink to="/">
+              <NavLinkStyled to="/">
                 Form
-              </NavLink>
+              </NavLinkStyled>
             </li>
             <li>
-              <NavLink to="/not-completed-tasks">
+              <NavLinkStyled to="/not-completed-tasks">
               Not Completed Tasks
-              </NavLink>
+              </NavLinkStyled>
             </li>
             <li>
-              <NavLink to="/completed-tasks">
+              <NavLinkStyled to="/completed-tasks">
               Completed Tasks
-              </NavLink>
+              </NavLinkStyled>
             </li>
-          </ul>
+          </ListStyled>
         </nav>
-      </header>
+      </HeaderStyled>
     );
   };
   
