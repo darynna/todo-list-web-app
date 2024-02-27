@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/818.1bc1484f.chunk.js","mappings":"6IAMA,UAN8B,WAI9B,C","sources":["pages/NotCompletedTasksPage/NotCompletedTasksPage.jsx"],"sourcesContent":["const NotCompletedTasksPage = () => {\n    return\n        \n    \n}\n\nexport default NotCompletedTasksPage"],"names":[],"sourceRoot":""}
