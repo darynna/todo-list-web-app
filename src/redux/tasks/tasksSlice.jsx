@@ -1,8 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const INITIAL_STATE = {
-  tasks: [],
-  completedTasks: [],
+  tasks: []
 };
 
 const tasksSlice = createSlice({
@@ -16,11 +15,10 @@ const tasksSlice = createSlice({
       state.tasks = state.tasks.filter(task => task.id !== action.payload);
     },
     completeTask: (state, action) => {
-      const taskIndex = state.tasks.findIndex(task => task.id === action.payload);
-      if (taskIndex !== -1) {
-        state.completedTasks.push(state.tasks[taskIndex]);
-        state.tasks.splice(taskIndex, 1);
-      }
+        const taskIndex = state.tasks.findIndex(task => task.id === action.payload);
+        if (taskIndex !== -1) {
+          state.tasks[taskIndex].completed = true;
+        }
     },
   },
 });

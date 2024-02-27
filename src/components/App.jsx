@@ -4,8 +4,8 @@ import { ROUTE_PATHES } from "constants/constants";
 import SharedLayout from "./SharedLayout/SharedLayout";
 
 const FormPage = lazy(() => import("pages/FormPage/FormPage"));
-const NotCompletedTasksPage = lazy(() => import("pages/CompletedTasksPage/CompletedTasksPage"));
-const CompletedTasksPage = lazy(() => import("pages/NotCompletedTasksPage/NotCompletedTasksPage"));
+const NotCompletedTasksPage = lazy(() => import("pages/NotCompletedTasksPage/NotCompletedTasksPage"));
+const CompletedTasksPage = lazy(() => import("pages/CompletedTasksPage/CompletedTasksPage"));
 
 
 export const App = () => {

@@ -2,12 +2,13 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addTask } from '../../redux/tasks/tasksSlice';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+const { v4: uuidv4 } = require('uuid');
 
 const TaskForm = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = (values, { resetForm }) => {
-    dispatch(addTask({ name: values.taskName, description: values.description }));
+    dispatch(addTask({ name: values.taskName, description: values.description, completed: false, id: uuidv4() }));
     resetForm();
   };
 
