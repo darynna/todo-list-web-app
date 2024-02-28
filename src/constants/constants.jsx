@@ -1,5 +1,5 @@
 export const ROUTE_PATHES = {
-    fome: "/",
+    form: "/",
     notCompletedTasks: "/not-completed-tasks",
     completedTasks: "/completed-tasks",
   };

@@ -19,23 +19,24 @@ export const StyledForm = styled(Form)`
 export const FormGroup = styled.div`
   margin-bottom: 20px;
 
-  .field{
+  .field {
     width: 380px;
     padding: 8px;
     font-size: 16px;
-    border: 1px solid #0056b3
-  }
-  
-  @media screen and (max-width: 767px) {
-    .field{ width: 280px;}
+    border: 1px solid #0056b3;
   }
 
+  @media screen and (max-width: 767px) {
+    .field {
+      width: 280px;
+    }
+  }
 `;
 
 export const Label = styled.label`
   display: block;
   margin-bottom: 5px;
-  color: #0056b3
+  color: #0056b3;
 `;
 
 export const InputStyled = styled(Field)`
@@ -60,7 +61,7 @@ export const SubmitButton = styled.button`
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s; 
+  transition: background-color 0.3s;
 
   &:hover {
     background-color: #0056b3;

@@ -1,9 +1,7 @@
-import TaskForm from "components/Form/Form"
+import TaskForm from 'components/Form/Form';
 
 const FormPage = () => {
-    return(
-        <TaskForm/>
-    )
-}
+  return <TaskForm />;
+};
 
-export default FormPage
+export default FormPage;

@@ -1,12 +1,7 @@
-import { TaskPageTitleStyled } from "./TaskPagesTitle.styled";
+import { TaskPageTitleStyled } from './TaskPagesTitle.styled';
 
-const TaskPageTitle = ({text}) => {
+const TaskPageTitle = ({ text }) => {
+  return <TaskPageTitleStyled>{text}</TaskPageTitleStyled>;
+};
 
-    return (
-      <TaskPageTitleStyled>
-        {text}
-      </TaskPageTitleStyled>
-    );
-  };
-  
-  export default TaskPageTitle;
+export default TaskPageTitle;

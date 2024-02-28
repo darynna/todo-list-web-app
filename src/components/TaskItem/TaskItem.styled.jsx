@@ -1,12 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const TaskListItem = styled.li`
   max-width: 800px;
   display: flex;
   justify-content: space-between;
-  margin:0 auto;
+  margin: 0 auto;
   // background-color: #f5f5f5;
-  background-color:  ${props => props.completed === 'true' ? '#d3d3d3' : '#f5f5f5'};
+  background-color: ${props =>
+    props.completed === 'true' ? '#d3d3d3' : '#f5f5f5'};
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -15,7 +16,6 @@ export const TaskListItem = styled.li`
 export const TaskName = styled.h3`
   color: #0056b3;
 `;
-
 
 export const TaskDescription = styled.p`
   color: #333;
@@ -39,7 +39,7 @@ export const ActionButton = styled.button`
 `;
 
 export const DeleteButton = styled(ActionButton)`
-  background-color:#ff7070;
+  background-color: #ff7070;
   &:hover {
     background-color: #e63900;
   }

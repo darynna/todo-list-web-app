@@ -1,4 +1,4 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore } from '@reduxjs/toolkit';
 import {
   persistStore,
   persistReducer,
@@ -8,22 +8,22 @@ import {
   PERSIST,
   PURGE,
   REGISTER,
-} from "redux-persist";
-import storage from "redux-persist/lib/storage";
+} from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 
-import { tasksReducer } from "./tasks/tasksSlice"; 
+import { tasksReducer } from './tasks/tasksSlice';
 
 const tasksConfig = {
-  key: "tasks",
+  key: 'tasks',
   storage,
-  whitelist: ["tasks"],
+  whitelist: ['tasks'],
 };
 
 export const store = configureStore({
   reducer: {
-    tasks: persistReducer(tasksConfig, tasksReducer)
+    tasks: persistReducer(tasksConfig, tasksReducer),
   },
-  middleware: (getDefaultMiddleware) =>
+  middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],

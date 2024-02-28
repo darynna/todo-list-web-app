@@ -12,7 +12,6 @@ import {
   SubmitButton,
   FormDescriptionText,
   FormWrap,
-  
 } from './Form.styled';
 
 import { nanoid } from 'nanoid';
@@ -75,7 +74,12 @@ const TaskForm = () => {
             </FormGroup>
             <FormGroup>
               <Label htmlFor="description">Description:</Label>
-              <Field className='field' as="textarea" id="description" name="description"/>
+              <Field
+                className="field"
+                as="textarea"
+                id="description"
+                name="description"
+              />
               <ErrorMsg name="description" component="div" className="error" />
             </FormGroup>
             <FormGroup>
