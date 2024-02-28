@@ -9,7 +9,7 @@ const TasksList = ({array}) => {
         array.map((date) => {
 
           return (
-            <TaskItem key={date.id} date={date}
+            <TaskItem key={date.id} date={date} 
             />
           );
         })}

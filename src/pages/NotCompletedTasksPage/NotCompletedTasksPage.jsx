@@ -4,6 +4,7 @@ import { selectTasks } from "../../redux/tasks/tasksSelectors";
 import EmptyPageComponent from "components/EmptyPageComponent/EmptyPageComponent";
 import TaskSearch from "components/TaskSearch/TaskSearch";
 import { selectFilter } from "../../redux/tasks/tasksSelectors";
+import TaskPageTitle from "components/TaskPagesTitle/TaskPagesTitle";
 
 const NotCompletedTasksPage = () => {
     const tasksArray = useSelector(selectTasks);
@@ -13,6 +14,7 @@ const NotCompletedTasksPage = () => {
 
     return(
         <>
+        <TaskPageTitle text={'Not Completed Tasks:'}/>
         <TaskSearch/>
         {notcompletedTasks.length === 0 ? (
           <EmptyPageComponent text={"You haven't added any tasks here yet. Use the form to create new tasks and start organizing your to-do list!"}/>

@@ -5,7 +5,8 @@ export const TaskListItem = styled.li`
   display: flex;
   justify-content: space-between;
   margin:0 auto;
-  background-color: #f5f5f5;
+  // background-color: #f5f5f5;
+  background-color:  ${props => props.completed === 'true' ? '#d3d3d3' : '#f5f5f5'};
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;

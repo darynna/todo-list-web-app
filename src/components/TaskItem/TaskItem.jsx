@@ -18,7 +18,7 @@ const handleDelete = () => {
 };
 
 return (
-  <TaskListItem key={date.id}>
+  <TaskListItem key={date.id} completed={date.completed ? 'true' : 'false'}>
     <div>
     <TaskName>{date.name}</TaskName>
       <TaskDescription>{date.description}</TaskDescription>

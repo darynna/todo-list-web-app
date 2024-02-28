@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const InputBoxStyled = styled.div`
- margin-top: 64px;
+ margin-top: 16px;
  display: flex;
  justify-content: center;
 `;
