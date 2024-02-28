@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { completeTask, deleteTask } from "../../redux/tasks/tasksSlice";
-import { TaskListItem, TaskName, TaskDescription, ActionButton, DeleteButton } from './TaskItem.styled';
+import { TaskListItem, TaskName, TaskDescription, ActionButton, DeleteButton, TaskDate } from './TaskItem.styled';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const TaskItem = ({ date }) => {
@@ -28,6 +28,15 @@ return (
         {date.completed ? 'Mark Incomplete' : 'Complete'}
       </ActionButton>
       <DeleteButton onClick={handleDelete}>Delete</DeleteButton>
+      <>
+      {
+       date.dueDate !== '' ? (
+        <TaskDate>Need to be completed till: {date.dueDate}</TaskDate>
+        ) : (
+          null
+        )
+      }
+      </>
       </div>
   </TaskListItem>
 );

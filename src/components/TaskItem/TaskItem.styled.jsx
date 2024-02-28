@@ -43,3 +43,7 @@ export const DeleteButton = styled(ActionButton)`
     background-color: #e63900;
   }
 `;
+
+export const TaskDate = styled.p`
+  color: #333;
+`;

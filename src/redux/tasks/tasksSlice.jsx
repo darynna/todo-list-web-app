@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const INITIAL_STATE = {
-  tasks: []
+  tasks: [],
+  searchFilter: '',
 };
 
 const tasksSlice = createSlice({
@@ -21,8 +22,11 @@ const tasksSlice = createSlice({
         state.tasks[taskIndex].completed = !state.tasks[taskIndex].completed;
       }
     },
+    updateSearchFilter: (state, action) => {
+      state.searchFilter = action.payload;
+    },
   },
 });
 
-export const { addTask, deleteTask, completeTask } = tasksSlice.actions;
+export const { addTask, deleteTask, completeTask, updateSearchFilter } = tasksSlice.actions;
 export const tasksReducer = tasksSlice.reducer;
