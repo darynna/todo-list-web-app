@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const TaskPageTitleStyled = styled.p`
-width: 600px;
 margin: 0 auto;
 margin-top: 64px;
 text-align: center;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TaskListItem = styled.li`
-  width: 800px;
+  max-width: 800px;
   display: flex;
   justify-content: space-between;
   margin:0 auto;
@@ -23,7 +23,7 @@ export const TaskDescription = styled.p`
 `;
 
 export const ActionButton = styled.button`
-width: 150px;
+  width: 150px;
   background-color: #1e90ff;
   color: white;
   border: none;

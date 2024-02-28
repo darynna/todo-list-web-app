@@ -11,7 +11,11 @@ export const InputStyled = styled.input`
   width: 380px;
   padding: 8px;
   font-size: 16px;
-  border: 1px solid #0056b3
+  border: 1px solid #0056b3;
+
+  @media screen and (max-width: 767px) {
+    width: 236px;
+  }
 `;
 
 

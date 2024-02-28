@@ -10,6 +10,10 @@ export const StyledForm = styled(Form)`
   flex-direction: column;
   max-width: 400px;
   margin: 0 auto;
+
+  @media screen and (max-width: 767px) {
+    width: 298px;
+  }
 `;
 
 export const FormGroup = styled.div`
@@ -21,6 +25,11 @@ export const FormGroup = styled.div`
     font-size: 16px;
     border: 1px solid #0056b3
   }
+  
+  @media screen and (max-width: 767px) {
+    .field{ width: 280px;}
+  }
+
 `;
 
 export const Label = styled.label`
@@ -33,7 +42,11 @@ export const InputStyled = styled(Field)`
   width: 380px;
   padding: 8px;
   font-size: 16px;
-  border: 1px solid #0056b3
+  border: 1px solid #0056b3;
+
+  @media screen and (max-width: 767px) {
+    width: 280px;
+  }
 `;
 
 export const ErrorMsg = styled(ErrorMessage)`
@@ -55,7 +68,7 @@ export const SubmitButton = styled.button`
 `;
 
 export const FormDescriptionText = styled.p`
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto;
   margin-bottom: 24px;
   text-align: center;
