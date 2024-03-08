@@ -35,10 +35,10 @@ const TaskForm = () => {
 
   const validate = values => {
     const errors = {};
-    if (!values.taskName) {
+    if (!values.taskName.trim()) {
       errors.taskName = 'Task name is required';
     }
-    if (!values.description) {
+    if (!values.description.trim()) {
       errors.description = 'Description is required';
     }
     if (values.dueDate) {
